@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 
 const Router = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name='Splashscreen' component={Splashscreen}/>
         <Stack.Screen name='Home' component={Home}/>
     </Stack.Navigator>
