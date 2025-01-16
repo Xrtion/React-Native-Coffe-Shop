@@ -22,8 +22,6 @@ const Icons = ({label, focus}) => {
 
 
 const ButtonTabs = ({ state, descriptors, navigation }) => {
-
-  const { colors } = useTheme();
   const { buildHref } = useLinkBuilder();
 
   return (
