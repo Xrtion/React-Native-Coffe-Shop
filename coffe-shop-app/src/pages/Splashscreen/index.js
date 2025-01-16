@@ -2,7 +2,7 @@ import { Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from
 import React from 'react'
 import { BackgroundSS, SplashS } from '../../assets/image'
 
-const Splashscreen = () => {
+const Splashscreen = ({navigation}) => {
   return (
     <View style={{ flex: 1}}>
       <ImageBackground source={BackgroundSS} style={{ flex: 1 }}>
@@ -18,7 +18,7 @@ const Splashscreen = () => {
             The best grain, the finest roas, the most powerful flavor.          
           </Text>
         </View>
-        <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor:"#00512C", alignItems: "center", paddingHorizontal: 30, paddingVertical: 15, borderRadius: 30, marginHorizontal: 60, marginTop: 30 }}>
+        <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor:"#00512C", alignItems: "center", paddingHorizontal: 30, paddingVertical: 15, borderRadius: 30, marginHorizontal: 60, marginTop: 30 }} onPress={() => navigation.navigate('MainApp')}>
           <Text style={{ fontSize: 16, fontWeight:"600", color:'white' }}>
             Get Started
           </Text>
